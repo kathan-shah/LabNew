@@ -4,6 +4,7 @@ public class RationalTest {
 
     @org.junit.Test
     public void add() {
+
     }
 
     @org.junit.Test
