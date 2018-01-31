@@ -38,7 +38,7 @@ public class Rational {
 
     public void div(Rational r){
         this.num = this.num * r.denom;
-        this.denom = this.denom*r.num
+        this.denom = this.denom * r.num;
     }
 
 }
