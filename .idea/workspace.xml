@@ -4,14 +4,8 @@
     <list default="true" id="fe12c525-0836-4013-91c8-1af504555ef5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Rational.iml" afterPath="$PROJECT_DIR$/Rational.iml" />
-=======
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Rational.iml" afterPath="$PROJECT_DIR$/Rational.iml" />
-=======
->>>>>>> 99be57edb347cf75a5652f863b550c1744f2c1d6
->>>>>>> 741af4a786ff8845d2eeb9f6a8dd0d524a96205b
       <change beforePath="$PROJECT_DIR$/src/RationalTest.java" afterPath="$PROJECT_DIR$/src/RationalTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,20 +17,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-<<<<<<< HEAD
     <leaf>
-=======
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
->>>>>>> 99be57edb347cf75a5652f863b550c1744f2c1d6
       <file leaf-file-name="Rational.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rational.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-<<<<<<< HEAD
               <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-=======
               <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
->>>>>>> 99be57edb347cf75a5652f863b550c1744f2c1d6
               <folding>
                 <element signature="e#202#203#0" expanded="true" />
                 <element signature="e#227#228#0" expanded="true" />
@@ -54,18 +42,12 @@
       <file leaf-file-name="RationalTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RationalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
             <state relative-caret-position="294">
               <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-=======
-<<<<<<< HEAD
             <state relative-caret-position="375">
               <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-=======
             <state relative-caret-position="420">
               <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
->>>>>>> 99be57edb347cf75a5652f863b550c1744f2c1d6
->>>>>>> 741af4a786ff8845d2eeb9f6a8dd0d524a96205b
               <folding />
             </state>
           </provider>
@@ -307,11 +289,9 @@
     <entry file="file://$PROJECT_DIR$/src/Rational.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-<<<<<<< HEAD
           <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-=======
+
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> 99be57edb347cf75a5652f863b550c1744f2c1d6
           <folding>
             <element signature="e#202#203#0" expanded="true" />
             <element signature="e#227#228#0" expanded="true" />
@@ -325,12 +305,10 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/RationalTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-=======
     <entry file="file://$PROJECT_DIR$/src/Rational.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -350,14 +328,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RationalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="294">
           <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-=======
         <state relative-caret-position="420">
           <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
->>>>>>> 99be57edb347cf75a5652f863b550c1744f2c1d6
->>>>>>> 741af4a786ff8845d2eeb9f6a8dd0d524a96205b
           <folding />
         </state>
       </provider>
