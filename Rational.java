@@ -27,7 +27,13 @@ public class Rational {
     }
 
     public void sub(Rational r){
-        
+        this.num = (this.num * r.denom) - (r.num * this.denom);
+        this.denom = this.denom * r.denom;
+    }
+
+    public void mul(Rational r){
+        this.num = this.num * r.num;
+        this.denom = this.denom * r.denom;
     }
 
 }
