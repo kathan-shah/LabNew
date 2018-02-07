@@ -4,6 +4,8 @@ public class Histogram {
     int m;
     int n;
     int difference;
+    int[] list1;
+    String base;
 
     public Histogram(int m, int n){
         if(m <= n) {
@@ -15,12 +17,13 @@ public class Histogram {
             this.n = m;
         }
         difference = n - m;
-        int[] list1 = {0,0,0,0,0,0};
-        this.list1 = list1;
+        list1 = new int[difference+1];
+
         for (int i = 0; i<=difference;i++){
-            list1[i] = 5;
-            System.out.println(list1[i]);
+            list1[i] = 0;
+
         }
+        base = "************************************";
     }
 
     public boolean add(int i){
@@ -37,8 +40,10 @@ public class Histogram {
     }
 
     public void to(){
+        int counter=0;
         for (int i : list1){
-            System.out.println(i);
+            System.out.println((counter+m) + ": " +(base.substring(0,i)));
+            counter++;
         }
 
     }
@@ -48,7 +53,6 @@ public class Histogram {
         Scanner scanner = new Scanner(scanner2.nextLine());
         int m1 = scanner.nextInt();
         int n1 = scanner.nextInt();
-        System.out.println(m1);
 
         System.out.print("Data? ");
         Scanner scanner3 = new Scanner(System.in);
@@ -61,10 +65,8 @@ public class Histogram {
                 System.out.println(m2 + " is not in range");
             else
                 h.append(m2);
-
         }
-
-
+        h.to();
 
     }
 }

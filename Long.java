@@ -1,79 +1,66 @@
-
+import java.util.Scanner;
 public class Long {
+   private static final String[] lowNames = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten","eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
 
-    public static void main(String[] args){
-        float number; //treating this as float for now, later change it to string
-        String longHand = " ";
+    private static final String[] tensNames = {"twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
 
-        int tens = number % 100;
+    private static final String[] bigNames = {"thousand", "million", "billion"};
 
-        String numArr =  "",
-                " one",
-                " two",
-                " three",
-                " four",
-                " five",
-                " six",
-                " seven",
-                " eight",
-                " nine",
-                " ten",
-                " eleven",
-                " twelve",
-                " thirteen",
-                " fourteen",
-                " fifteen",
-                " sixteen",
-                " seventeen",
-                " eighteen",
-                " nineteen" ;
+    public static String convertNumberToWords (int n) {
+        if (n < 0) {
+            return "minus " + convertNumberToWords(-n); }
+        if (n <= 999) {
+            return convert999(n); }
 
-        String num1Arr = "",
-                " ten",
-                " twenty",
-                " thirty",
-                " forty",
-                " fifty",
-                " sixty",
-                " seventy",
-                " eighty",
-                " ninety" ;
+    String s = "";
+    int t = 0;
 
-        // XXXnnnnnnnnn
-        int billions = Integer.parseInt(number.substring(0,3));
-        // nnnXXXnnnnnn
-        int millions  = Integer.parseInt(number.substring(3,6));
-        // nnnnnnXXXnnn
-        int hundredThousands = Integer.parseInt(number.substring(6,9));
-        // nnnnnnnnnXXX
-        int thousands = Integer.parseInt(number.substring(9,12));
+    while (n > 0) {
+        if (n % 1000 != 0) {
+            String s2 = convert999(n % 1000);
+        if (t > 0) {
+            s2 = s2 + " " + bigNames[t-1]; }
+        if (s == "") {
+            s = s2; }
+        else 
+            s = s2 + ", " + s; }
+      n /= 1000;
+      t++; }
 
-        if (billions<20)
-            longHand = longHand + numArr[billions] + "billions";
-        else if
-            longHand = longHAnd + num1Arr[(billions.substring(1,2)] + numArr[billions % 10] + "billions";
+   return s; }
 
-        if (millions<20)
-            longHand = longHand + numArr[millions] + "millions";
-        else if
-        longHand = longHAnd + num1Arr[(millions.substring(1,2)] + numArr[millions % 10] + "millions";
+   private static String convert999 (int n) {
+        String s1 = lowNames[n / 100] + " hundred";
+        String s2 = convert99(n % 100);
+   
+        if (n <= 99) {
+            return s2; }
+        else if (n % 100 == 0) {
+            return s1; }
+        else 
+            return s1 + " " + s2; 
 
-        if (hundredThousands<20)
-            longHand = longHand + numArr[hundredThousands] + "thousand";
-        else if
-        longHand = longHAnd + num1Arr[(hundredThousands.substring(1,2)] + numArr[hundredThousands % 10] + "thousand";
+        }
 
-        if (thousands<20)
-            longHand = longHand + numArr[thousands] ;
-        else if
-        longHand = longHAnd + num1Arr[(thousands.substring(1,2)] + numArr[thousands % 10] ;
+    private static String convert99 (int n) {
+        if (n < 20) {
+            return lowNames[n]; }
+        
+        String s = tensNames[n / 10 - 2];
+   
+        if (n % 10 == 0) 
+            return s; 
+   
+        return s + "-" + lowNames[n % 10]; 
+   }
 
-
-
-
-
-
-
-
+    public static void main(String[] args) {
+        String dollar;
+        String cent;
+        Scanner scanner2 = new Scanner(System.in);
+        String scanner = scanner2.nextLine();
+        dollar = scanner.substring(1,scanner.length()-3);
+        cent = scanner.substring(scanner.length()-2,scanner.length());
+        System.out.println(convertNumberToWords(Integer.parseInt(dollar))+" dollars and "+cent+"/100 cents");
     }
 }
